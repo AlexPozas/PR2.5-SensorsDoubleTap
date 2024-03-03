@@ -17,10 +17,6 @@ public class MainActivity extends AppCompatActivity {
     private Sensor sensor;
     SensorEventListener sensorListener;
 
-
-
-
-
     @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -39,10 +35,12 @@ public class MainActivity extends AppCompatActivity {
                 textView2.setText("" + zAcc);
 
                 // Processament o visualització de dades...
+
             }
 
             @Override
             public void onAccuracyChanged(Sensor sensor, int i) {
+
 
             }
         };
